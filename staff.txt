@@ -1,1 +1,9 @@
-Username,
+Ayobami
+inheritance
+Ayo@gmail.com
+Adeleke Ayobami
+
+Username = Tobi
+Password = incense
+email = Ay@gmail.com
+fullName = Adeleke Tobi

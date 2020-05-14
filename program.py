@@ -1,23 +1,28 @@
-print('Do you want to login')
-closeApp =input(print('Login? or close app'))
+print('Enter "L" for login and "C" to close app')
+closeApp =input('Login or close app: ')
 
 
 
-if(closeApp == 'login'):
-    username=input(print('enter your username'))
-    password = input(print('enter your password'))
-
-ques = input(print('Do you want to create new account orcheck details or logout'))
-
-    if(ques == 'createaccount'):
-        accname = input(print('enter acc name'))
-        oppbal = input(print('enter opening balance'))
-        acctype = input(print('enter acc type'))
-        accemail = input(print('enter acc email'))
-
-elif(closeApp == 'checkaccount details'):
-      accname = input(print('enter acc name'))
+if(closeApp == 'L'):
+    username=input('Enter your username: ')
+    password = input('enter your password: ')
+    with open('staff.txt') as file:
 
 
-elif(closeApp == 'logout'):
+
+
+        contents = file.read()
+        
+        if (username and password) in contents:
+            print ('Login successful')
+            ques = input(print('Do you want to create new account orcheck details or logout'))
+        else:
+            print ('Error! please try again')
+        
+
     
+
+
+
+    
+
